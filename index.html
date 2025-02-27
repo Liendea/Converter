@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/da493979b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- container -->
+      <div class="container">
+        <!-- headline container -->
+        <div class="top-container">
+          <a href="index.html">Weight</a>
+          <a href="units.html">Cups/dl</a>
+          <a href="index.html">Currancy</a>
+        </div>
+        <!-- Button & Input wrapper -->
+        <div class="middle-container">
+          <h3>Convert from:</h3>
+          <!-- Button container -->
+          <div class="btn-container">
+            <button type="button" class="button active" id="LBS-button">
+              LBS</button
+            ><button type="button" class="button" id="KG-button">KG</button>
+          </div>
+          <!-- input container -->
+          <div class="input-container">
+            <input
+              type="text"
+              name="weight"
+              id="weight-input"
+              placeholder="Type weight..."
+            />
+          </div>
+        </div>
+
+        <div class="result-container">
+          <table id="KG-table" class="">
+            <tr>
+              <th class="headline">Enhet</th>
+              <th class="headline">Värde</th>
+            </tr>
+            <tr>
+              <th>Kilogram</th>
+              <td id="kg-result"></td>
+            </tr>
+            <tr>
+              <th>Hekto</th>
+              <td id="hg-result"></td>
+            </tr>
+            <tr>
+              <th>Gram</th>
+              <td id="g-result"></td>
+            </tr>
+          </table>
+
+          <table id="LBS-table" class="hidden">
+            <tr>
+              <th class="headline">Enhet</th>
+              <th class="headline">Värde</th>
+            </tr>
+            <tr>
+              <th>Stones</th>
+              <td id="stone-result"></td>
+            </tr>
+            <tr>
+              <th>LBS</th>
+              <td id="lbs-result"></td>
+            </tr>
+            <tr>
+              <th>Ounces</th>
+              <td id="ounces-result"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>

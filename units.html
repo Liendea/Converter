@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="units.css" />
+    <script
+      src="https://kit.fontawesome.com/da493979b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- container -->
+      <div class="container">
+        <!-- headline container -->
+        <div class="top-container">
+          <a href="index.html">Weight</a>
+          <a href="units.html">Cups/dl</a>
+          <a href="index.html">Currancy</a>
+        </div>
+        <!-- Button & Input wrapper -->
+        <div class="middle-container">
+          <h3>Convert from:</h3>
+          <!-- Button container -->
+          <div class="btn-container">
+            <button type="button" class="button active" id="cups-button">
+              Cups</button
+            ><button type="button" class="button" id="dl-button">dl</button>
+          </div>
+          <!-- input container -->
+          <div class="input-container">
+            <input
+              type="text"
+              name="weight"
+              id="weight-input"
+              placeholder="Type weight..."
+            />
+          </div>
+        </div>
+
+        <div class="result-container">
+          <table id="dl-table" class="">
+            <tr>
+              <th class="headline">Enhet</th>
+              <th class="headline">Värde</th>
+            </tr>
+            <tr>
+              <th>liter</th>
+              <td id="l-result"></td>
+            </tr>
+            <tr>
+              <th>dl</th>
+              <td id="dl-result"></td>
+            </tr>
+            <tr>
+              <th>cl</th>
+              <td id="cl-result"></td>
+            </tr>
+            <tr>
+              <th>matsked</th>
+              <td id="msk-result"></td>
+            </tr>
+            <tr>
+              <th>tesked</th>
+              <td id="tsk-result"></td>
+            </tr>
+            <tr>
+              <th>ml</th>
+              <td id="ml-result"></td>
+            </tr>
+          </table>
+
+          <table id="cups-table" class="hidden">
+            <tr>
+              <th class="headline">Enhet</th>
+              <th class="headline">Värde</th>
+            </tr>
+            <tr>
+              <th>gallon</th>
+              <td id="gallon-result"></td>
+            </tr>
+            <tr>
+              <th>quarts</th>
+              <td id="quarts-result"></td>
+            </tr>
+            <tr>
+              <th>pint</th>
+              <td id="pint-result"></td>
+            </tr>
+            <tr>
+              <th>cup</th>
+              <td id="cup-result"></td>
+            </tr>
+            <tr>
+              <th>pound</th>
+              <td id="pound-result"></td>
+            </tr>
+            <tr>
+              <th>ounce</th>
+              <td id="ounce-result"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="units.js"></script>
+  </body>
+</html>
