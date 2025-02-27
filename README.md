@@ -1,11 +1,12 @@
 Unit converter
-Converts from:
+Converts to and from:
 
 cups to dl 
-dl to cups
 
-kg to lb
-lbs to kg
+and
+
+kg to lbs
+
 
 More related untis presented in a table when a value is converted
 
