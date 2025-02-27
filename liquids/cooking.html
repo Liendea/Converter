@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converter</title>
-    <link rel="stylesheet" href="units.css" />
+    <link rel="stylesheet" href="/liquids/cooking.css" />
     <script
       src="https://kit.fontawesome.com/da493979b6.js"
       crossorigin="anonymous"
@@ -24,9 +24,9 @@
       <div class="container">
         <!-- headline container -->
         <div class="top-container">
-          <a href="index.html">Weight</a>
+          <a href="/index.html">Weight</a>
           <a href="units.html">Cups/dl</a>
-          <a href="index.html">Currancy</a>
+          <a href="#">Currancy</a>
         </div>
         <!-- Button & Input wrapper -->
         <div class="middle-container">
@@ -40,10 +40,10 @@
           <!-- input container -->
           <div class="input-container">
             <input
-              type="text"
-              name="weight"
-              id="weight-input"
-              placeholder="Type weight..."
+              type="number"
+              name="cooking"
+              id="cooking-input"
+              placeholder="Enter units of cups..."
             />
           </div>
         </div>
@@ -51,8 +51,8 @@
         <div class="result-container">
           <table id="dl-table" class="">
             <tr>
-              <th class="headline">Enhet</th>
-              <th class="headline">Värde</th>
+              <th class="headline">Unit</th>
+              <th class="headline">Value</th>
             </tr>
             <tr>
               <th>liter</th>
@@ -67,6 +67,10 @@
               <td id="cl-result"></td>
             </tr>
             <tr>
+              <th>ml</th>
+              <td id="ml-result"></td>
+            </tr>
+            <tr>
               <th>matsked</th>
               <td id="msk-result"></td>
             </tr>
@@ -74,16 +78,12 @@
               <th>tesked</th>
               <td id="tsk-result"></td>
             </tr>
-            <tr>
-              <th>ml</th>
-              <td id="ml-result"></td>
-            </tr>
           </table>
 
           <table id="cups-table" class="hidden">
             <tr>
-              <th class="headline">Enhet</th>
-              <th class="headline">Värde</th>
+              <th class="headline">Unit</th>
+              <th class="headline">Value</th>
             </tr>
             <tr>
               <th>gallon</th>
@@ -102,10 +102,6 @@
               <td id="cup-result"></td>
             </tr>
             <tr>
-              <th>pound</th>
-              <td id="pound-result"></td>
-            </tr>
-            <tr>
               <th>ounce</th>
               <td id="ounce-result"></td>
             </tr>
@@ -113,6 +109,6 @@
         </div>
       </div>
     </section>
-    <script src="units.js"></script>
+    <script src="./cooking.js"></script>
   </body>
 </html>

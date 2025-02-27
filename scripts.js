@@ -11,6 +11,8 @@ LBS_button.addEventListener("click", () => {
 
   LBS_button.classList.add("active");
   KG_button.classList.remove("active");
+
+  inputField.placeholder = "Type weight in LBS...";
 });
 
 KG_button.addEventListener("click", () => {
@@ -21,12 +23,14 @@ KG_button.addEventListener("click", () => {
 
   KG_button.classList.add("active");
   LBS_button.classList.remove("active");
+
+  inputField.placeholder = "Type weight in KG...";
 });
 
 // Konverterare
 
 let inputField = document.getElementById("weight-input");
-inputField.addEventListener("keydown", function () {
+inputField.addEventListener("input", function () {
   let inputValue = inputField.value;
 
   //Konvertera från KG till LBS
