@@ -172,8 +172,12 @@ td {
     background-color: #242424;
     color: white;
   }
+}
 
-  button {
-    color: white;
+@media (max-width: 400px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
   }
 }
