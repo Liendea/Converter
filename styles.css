@@ -67,6 +67,7 @@ h3 {
   border-radius: 30px;
   border: none;
   background-color: #ede7e4;
+  color: black;
   cursor: pointer;
   font-family: inherit;
   font-size: 25px;
@@ -169,6 +170,10 @@ td {
   .result-container,
   input {
     background-color: #242424;
+    color: white;
+  }
+
+  button {
     color: white;
   }
 }
