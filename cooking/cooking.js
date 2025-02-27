@@ -15,6 +15,8 @@ cups_button.addEventListener("click", () => {
   cups_button.classList.add("active");
   dl_button.classList.remove("active");
 
+  // Töm inputfältet och ändra placeholdern
+  inputField.value = "";
   inputField.placeholder = "Enter units of cups...";
 });
 
@@ -29,6 +31,8 @@ dl_button.addEventListener("click", () => {
   dl_button.classList.add("active");
   cups_button.classList.remove("active");
 
+  // Töm inputfältet och ändra placeholdern
+  inputField.value = "";
   inputField.placeholder = "Enter units of dl...";
 });
 
@@ -67,3 +71,8 @@ inputField.addEventListener("input", function () {
     document.getElementById("tsk-result").innerText = `${tesked}`;
   }
 });
+
+// To-do
+// Lägg till att input fältet rensas när någon av knapparna trycks
+// eller:
+// Skapa drop down där man kan välja från vilken enhet man vill konvertera istället för endast tvp knappval.

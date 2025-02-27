@@ -12,6 +12,8 @@ LBS_button.addEventListener("click", () => {
   LBS_button.classList.add("active");
   KG_button.classList.remove("active");
 
+  // Töm inputfältet och ändra placeholdern
+  inputField.value = "";
   inputField.placeholder = "Type weight in LBS...";
 });
 
@@ -24,6 +26,8 @@ KG_button.addEventListener("click", () => {
   KG_button.classList.add("active");
   LBS_button.classList.remove("active");
 
+  // Töm inputfältet och ändra placeholdern
+  inputField.value = "";
   inputField.placeholder = "Type weight in KG...";
 });
 
