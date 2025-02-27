@@ -18,9 +18,15 @@ cups_button.addEventListener("click", () => {
   // Töm inputfältet och ändra placeholdern
   inputField.value = "";
   inputField.placeholder = "Enter units of cups...";
+
+  // Töm resultatfältet när knapp trycks
+  let dt = document.querySelectorAll("td");
+  dt.forEach((element) => {
+    element.textContent = "";
+  });
 });
 
-// Visa rätt resultat tabell enligt knappval
+// Visa rätt resultattabell enligt knappval
 // När dl knappen trycks ska cups resultat tabellen visas
 dl_button.addEventListener("click", () => {
   dl_table.classList.add("hidden");
@@ -34,6 +40,12 @@ dl_button.addEventListener("click", () => {
   // Töm inputfältet och ändra placeholdern
   inputField.value = "";
   inputField.placeholder = "Enter units of dl...";
+
+  // Töm resultatfältet när knapp trycks
+  let dt = document.querySelectorAll("td");
+  dt.forEach((element) => {
+    element.textContent = "";
+  });
 });
 
 // Konverterare
@@ -73,6 +85,4 @@ inputField.addEventListener("input", function () {
 });
 
 // To-do
-// Lägg till att input fältet rensas när någon av knapparna trycks
-// eller:
 // Skapa drop down där man kan välja från vilken enhet man vill konvertera istället för endast tvp knappval.
